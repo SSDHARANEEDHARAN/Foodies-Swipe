@@ -1,0 +1,55 @@
+.SECTION-FORM__ONE {
+    padding: 25px;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: gray;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card {
+    width: 210px; 
+    background-color: gray;
+    color: lightcyan;
+    margin: 15px auto;
+    padding: 555px; 
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15PX;
+    padding-right: 15PX;
+    display: inline-block;
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    text-align: center;    
+}
+
+.card__button {
+    background-color: transparent;
+    color: black;
+    border: solid aqua;
+    padding: 10px 20px;
+}
+
+.card__button:hover {
+    background-color: lightblue; 
+}
+
+.card__button--red {
+    background-color: brown;
+}
+.card__img {
+    max-width: 100%; 
+    max-height: 150px;
+    width: auto;      
+    height: auto;     
+    border-radius: 10px 10px 0 0;
+    object-fit: cover; 
+}
+.card-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    margin: 20px auto; 
+}
+

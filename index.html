@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe</title>
+</head>
+
+<body>
+        <div class="SECTION-FORM__ONE">
+            <h1 class="section-one__name">HOME | RECIPE | CONTACT</h1>
+        </div>
+<div class="card-container">
+        <div class="card">
+            <table>
+                <tr>
+                    <td>
+                        <img class="card__img" src="1.jpg" alt="Chicken Stir-Fry">
+                        <h1 class="card__title">"Chicken Stir-Fry"</h1><br>
+                        <p class="card__description">Stir-fried with vegetables and sauce, served over rice or noodles
+                        </p>
+                        <br>
+                        <button class="card_button">ORDER NOW</button><br>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="card">
+            <table>
+                <tr>
+                    <td>
+                        <img class="card__img" src="2.jpg" alt="Chicken Stir-Fry">
+                        <h1 class="card__title">"Chicken Stir-Fry"</h1><br>
+                        <p class="card__description">Stir-fried with vegetables and sauce, served over rice or noodles
+                        </p>
+                        <br>
+                        <button class="card_button">CHECKOUT</button><br>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="card">
+            <table>
+                <tr>
+                    <td>
+                        <img class="card__img" src="3.jpeg" alt="Chicken Stir-Fry">
+                        <h1 class="card__title">"Chicken Stir-Fry"</h1><br>
+                        <p class="card__description">Stir-fried with vegetables and sauce, served over rice or noodles
+                        </p>
+                        <br>
+                        <button class="card_button">CHECKOUT</button><br>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="SECTION-FORM__ONE">
+        <form id="contactForm" class="contactForm">
+            <center>
+                <h2>CONTACT US</h2>
+                <table>
+                    <tr>
+                        <td>Name:</td>
+                        <td><input type="text" placeholder="Enter your Name" class="contact-form__one"></td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td><input type="email" placeholder="Enter your Email" class="contact-form__two"></td>
+                    </tr>
+                    <tr>
+                        <td>AGE:</td>
+                        <td><input type="number" placeholder="ENTER YOUR AGE" class="contact-form__three"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><button type="submit" class="contact-form__four">SUBMIT</button></td>
+                    </tr>
+                </table>
+            </center>
+        </form>
+
+        <div class="success-message" id="successMessage" style="display: none;">
+            Successfully Submitted! Thanks for contacting us! We're here to help!
+        </div>
+
+        <script>
+            document.getElementById('contactForm').addEventListener('submit', function (event) {
+                event.preventDefault();
+                document.getElementById('successMessage').style.display = 'block';
+                this.reset();
+            });
+        </script>
+    </div>
+</body>
+
+</html>
